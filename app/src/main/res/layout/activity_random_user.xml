@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RandomUserActivity"
+    android:gravity="center"
+    android:background="@color/MA200_green">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="100dp"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageview"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="48dp"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/labelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/imageview"
+                android:layout_marginStart="16dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Mert Eroğlu"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/labelName"
+                android:layout_below="@id/imageview"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/labelAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageview"
+                android:layout_toLeftOf="@id/txtAge"
+                android:layout_marginTop="16dp"
+                android:text="Age: "
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/txtAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="24"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/imageview"
+                android:layout_marginEnd="36dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/labelEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="18sp"
+                android:layout_below="@id/labelAge"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                />
+            <TextView
+                android:id="@+id/txtEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="mert_1999.286@hotmail.com"
+                android:layout_below="@id/labelName"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@id/labelEmail"/>
+
+            <TextView
+                android:id="@+id/labelGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender: "
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_below="@id/labelEmail"
+                />
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Man"
+                android:layout_toRightOf="@id/labelGender"
+                android:layout_below="@id/labelEmail"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/labelPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:layout_below="@id/labelGender"
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"/>
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                tools:text="5359549869"
+                android:layout_marginTop="16dp"
+                android:layout_below="@id/labelGender"
+                android:layout_toRightOf="@id/labelPhone"/>
+
+
+            <Button
+                android:id="@+id/regenerateUserBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Regenerate"
+                android:backgroundTint="@color/MA200_purple"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="20dp"/>
+
+            <Button
+                android:id="@+id/saveUserBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save User"
+                android:backgroundTint="@color/MA200_purple"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="20dp"
+                android:textSize="18sp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
